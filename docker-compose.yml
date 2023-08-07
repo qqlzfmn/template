@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  trainer:
+    image: trainer:latest
+    container_name: trainer
+    build: .
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
